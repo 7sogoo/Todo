@@ -1,0 +1,39 @@
+{
+  "name": "be",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "start:prod": "node dist/index.js",
+    "codegen": "graphql-codegen-esm --config codegen.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.12.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "graphql": "^16.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
+    "@graphql-codegen/cli": "^5.0.6",
+    "@graphql-codegen/typescript-resolvers": "^4.5.1",
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.14",
+    "nodemon": "^3.1.7",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
